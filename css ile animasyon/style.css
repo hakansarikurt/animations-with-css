@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navbar-bg: #DCBFFF;
+    --link-color: black;
+    --paragraf: #F1EAFF;
+    --section: #E5D4FF;
+    --baslik: #D0A2F7;
+    --baslik-fs: 40px;
+    --paragraf-fs: 17px;
+}
+
+body {
+    background-color: var(--baslik);
+}
+
+.d-flex {
+    display: flex;
+
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+
+.unlist {
+    list-style-type: none;
+}
+
+.hero-logo {
+    width: 50%;
+
+}
+
+.img {
+    width: 100%;
+}
+
+.nav-item {
+    margin: 10px;
+}
+
+.nav-item a:hover {
+    color: var(--paragraf);
+}
+
+.nav-color {
+    padding: 0px 10px;
+    background-color: var(--navbar-bg);
+}
+
+.gap {
+    gap: 10px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.for-img {
+    gap: 10px;
+    padding: 10px;
+}
+
+.foto {
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 0.5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: .5s flex;
+}
+
+.foto:hover {
+    flex: 1;
+}
+
+/* .resim1 {
+    background-image: url("https://picsum.photos/id/234/2000/2000");
+}
+
+.resim2 {
+    background-image: url("https://picsum.photos/id/233/2000/2000");
+}
+
+.resim3 {
+    background-image: url("https://picsum.photos/id/232/2000/2000");
+}
+
+.resim4 {
+    background-image: url("https://picsum.photos/id/231/2000/2000");
+} */
+
+
+.resim1 {
+    background-image: url(resmi-nike-sitesi.jpeg);
+    height: 60vh;
+}
+
+.resim2 {
+    background-image: url(resmi-nike-sitesi\ \(1\).jpeg);
+    height: 60vh;
+}
+
+.resim3 {
+    background-image: url(resmi-nike-sitesi\ \(2\).jpeg);
+    height: 60vh;
+}
+
+.resim4 {
+    background-image: url(resmi-nike-sitesi\ \(3\).jpeg);
+    height: 60vh;
+}
+
+.label-kapsayici {
+    width: 100%;
+}
+
+label {
+    display: inline-flex;
+    width: 100%;
+    height: 50vh;
+}
+
+.kapsayici {
+    position: relative;
+    overflow: hidden;
+    width: inherit;
+    cursor: pointer;
+
+}
+
+.card-section {
+    height: 00px;
+    width: 100%;
+
+}
+
+.box img {
+    width: 100%;
+    height: 50vh;
+
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.box {
+    backface-visibility: hidden;
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    transition: .2s all;
+    perspective: 700px;
+    overflow: hidden;
+}
+
+
+.arkayuz {
+    padding: 10px;
+    transform: rotateY(180deg);
+    text-align: center;
+    padding-top: 200px;
+}
+
+.check {
+    display: none;
+}
+
+.check:checked~.kapsayici .onyuz {
+    transform: rotateY(180deg);
+}
+
+.check:checked~.kapsayici .arkayuz {
+    transform: rotateY(0deg);
+}
+
+
+
+
+
+
+@media (max-width:768px) {
+    .for-img {
+        flex-direction: column;
+        height: 800px;
+    }
+
+    .foto {
+        width: 100%;
+        height: inherit;
+
+    }
+
+    .label-kapsayici {
+        flex-direction: column;
+        display: block;
+    }
+}
+
+@media (max-width:576px) {
+    .card-section {
+        flex-direction: column;
+    }
+
+
+}
