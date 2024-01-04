@@ -100,7 +100,6 @@ body {
     background-image: url("https://picsum.photos/id/231/2000/2000");
 } */
 
-
 .resim1 {
     background-image: url(resmi-nike-sitesi.jpeg);
     height: 60vh;
@@ -178,8 +177,6 @@ label {
 .check:checked~.kapsayici .arkayuz {
     transform: rotateY(0deg);
 }
-
-
 
 @media (max-width:768px) {
     .for-img {
