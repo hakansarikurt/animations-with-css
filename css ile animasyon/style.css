@@ -83,15 +83,6 @@ body {
 .foto:hover {
     flex: 1;
 }
-
-/* 
-.resim3 {
-    background-image: url("https://picsum.photos/id/232/2000/2000");
-}
-.resim4 {
-    background-image: url("https://picsum.photos/id/231/2000/2000");
-} */
-
 .resim1 {
     background-image: url(resmi-nike-sitesi.jpeg);
     height: 60vh;
